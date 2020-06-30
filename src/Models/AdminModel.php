@@ -1,13 +1,11 @@
 <?php
 /*
 * Class functions  
-* - add Gtrade customer user 
-* - qurey Gtrade customer         
 */
 
 namespace Nandev\Models;
 
-use Nandev\MongoNativeDriver\Model as NanModel ;
+use Nantaburi\Mongodb\MongoNativeDriver\Model as NanModel ;
 
 class AdminModel extends NanModel
 {  
