@@ -38,7 +38,7 @@ class UserDbModel  extends Model {
    - using command `  php artisan make:controller --model=Userdatabase ` at laravel root project 
    - then edit and insert basic SQL as example :
       ` select * from user where  username like 'suphacha%' and age > 18 or mooban = 'Pangpoi' ; `
-   - SQL transform showing as below : 
+   - using SQL transform showing as below : 
  ````
  use App\UserDbModel ; 
  
@@ -46,7 +46,9 @@ class UserDbModel  extends Model {
                           ->where("username" , "like" , "suphacha%" )
                           -andwhere("age" ,">", 18)
                           ->orwhere("mooban" ,"=" ,"Pangpoi" )
-                          ->get() 
+                          ->get() ;
+                          
+    return view('userlist')->with("users",$users) ; 
                           
                           
  
