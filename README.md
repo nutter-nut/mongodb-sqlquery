@@ -18,12 +18,13 @@ Mongodb using SQL style
 __________
 
 - Using Laravel for SQL query style  example below 
-    - Create Model
+    - Create Model - using command `  php artisan make:model UserDbModel ` at laravel root project 
+      and insert ` use Nantaburi\Mongodb\MongoNativeDriver\Model   ` on top
 ````
 
 use Nantaburi\Mongodb\MongoNativeDriver\Model 
 
-class Userdatabase  extends Model {
+class UserDbModel  extends Model {
 
     protected $collection = "users" ;
     protected $database = "marcompany" ;
@@ -33,4 +34,21 @@ class Userdatabase  extends Model {
 
 
 ````
-
+- Create Laravel controller 
+   - using command `  php artisan make:controller --model=Userdatabase ` at laravel root project 
+   - then edit and insert basic SQL as example :
+      ` select * from user where  username like 'suphacha%' and age > 18 or mooban = 'Pangpoi' ; `
+   - SQL transform showing as below : 
+ ````
+ use App\UserDbModel ; 
+ 
+    $users= UserDbModel::query()
+                          ->where("username" , "like" , "suphacha%" )
+                          -andwhere("age" ,">", 18)
+                          ->orwhere("mooban" ,"=" ,"Pangpoi" )
+                          ->get() 
+                          
+                          
+ 
+ ````
+ 
