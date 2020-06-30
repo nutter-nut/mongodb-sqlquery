@@ -44,7 +44,7 @@ class UserDbModel  extends Model {
  
     $users= UserDbModel::query()
                           ->where("username" , "like" , "suphacha%" )
-                          -andwhere("age" ,">", 18)
+                          ->andwhere("age" ,">", 18)
                           ->orwhere("mooban" ,"=" ,"Pangpoi" )
                           ->get() ;
                           
