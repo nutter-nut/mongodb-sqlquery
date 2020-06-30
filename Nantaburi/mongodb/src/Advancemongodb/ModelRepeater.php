@@ -1,17 +1,13 @@
 <?php namespace Nandev\Advancemongodb;
 
-/*
-*
-*  Nandev :
-*  Create by : Anan Paenthongkham
-*  Update : 2020-6-7
-*/
-
 /* ******************* 
 * project Nandave
 * edit file composor.json 
-* Create by : Anan Paenthongkam
-*
+* Create by team Nandev: 
+*                       Anan P.
+*                       Suphachai.
+*                       Tanapath.
+*                       
 * config: composer.json 
 * 
 * add  : "psr-4": { 
