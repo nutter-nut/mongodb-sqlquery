@@ -36,9 +36,9 @@ class UserDbModel  extends Model {
 ````
 - Create Laravel controller 
    - using command `  php artisan make:controller --model=Userdatabase ` at laravel root project 
-   - then edit and insert basic SQL as example :
+   - then edit and insert basic SQL  example :
       ` select * from user where  username like 'suphacha%' and age > 18 or mooban = 'Pangpoi' ; `
-   - using SQL transform showing as below : 
+   - using SQL transform showing  below : 
  ````
  use App\UserDbModel ; 
  
