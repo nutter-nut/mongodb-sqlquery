@@ -1,8 +1,8 @@
 <?php
 
-namespace Nantaburi\Mongodb\Models;
+namespace Nandev\Models;
 
-use Nantaburi\Mongodb\Models\Model as MongoDB ;
+use Jenssegers\Mongodb\Eloquent\Model as MongoDB ;
 
 
 class Group_type extends MongoDB

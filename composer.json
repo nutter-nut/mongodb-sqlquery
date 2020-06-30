@@ -1,5 +1,5 @@
 {
-    "name": "nutter-nut/mongodb-sqlquery",
+    "name": "nantaburi/mongodb-sqlquery",
     "type": "library",
     "description": "Mongodb using SQL style",
     "keywords": ["laravel",
@@ -25,7 +25,7 @@
 	"mongodb/mongodb": "^1.6"
     },
     "autoload": {
-        "psr-0": {
+        "psr-4": {
             "Nantaburi\\Mongodb": "src"
         }
     }

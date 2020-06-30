@@ -2,10 +2,10 @@
 
 namespace Nandev\Models;
 
-use Illuminate\Database\Eloquent\Model;
+//use Illuminate\Database\Eloquent\Model;
+use Jenssegers\Mongodb\Eloquent\Model as MongoDB ;
 
-
-class Products extends Model
+class Products extends MongoDB
 {
     protected $connection = 'mongodb';
     protected $collection = 'products';
