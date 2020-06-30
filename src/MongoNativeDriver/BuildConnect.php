@@ -16,7 +16,7 @@
 
 
 
-namespace Nandev\MongoNativeDriver;
+namespace Nantaburi\Mongodb\MongoNativeDriver;
 use MongoDB\Client;
 class BuildConnect {
 

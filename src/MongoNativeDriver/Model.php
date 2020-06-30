@@ -8,10 +8,10 @@
  */
 
 
-namespace Nantaburi\Mongodb;
+namespace Nantaburi\Mongodb\MogodbNativeDriver;
 
-use Nantaburi\Mongodb\Config;
-use Nantaburi\Mongodb\Connection ;  
+use Nantaburi\Mongodb\MogodbNativeDriver\Config;
+use Nantaburi\Mongodb\MogodbNativeDriver\Connection ;  
 class Model extends Connection {  //   defind class for repeater 
    /*
    * @overrding $collection  to Connection

@@ -8,14 +8,17 @@
  */
 
 
-namespace Nandev\MongoNativeDriver;
+namespace Nantaburi\Mongodb\MongoNativeDriver;
 
 class Config {  
 
   private static $connection = array('config' => array() ) ;
 
   public function __construct() {
-       $databaseConfig = include __DIR__ ."/../../config/database.php"   ; 
+       $reflection = new \ReflectionClass(\Composer\Autoload\ClassLoader::class);
+       $venderDir = dirname(dirname($reflection->getFileName())); 
+       $databaseConfig = include $venderDir. "/../config/database.php"   ; 
+       print_r ( $databaseConfig  ) ;
        self::$connection['config']['database'] = $databaseConfig['connections']['mongodb']['database']  ;
        self::$connection['config']['host'] = $databaseConfig['connections']['mongodb']['host']  ;
        self::$connection['config']['port'] = $databaseConfig['connections']['mongodb']['port']  ;
