@@ -1,12 +1,10 @@
-project Nandave
-
-Create by : Anan Paenthongkam
+project Nantaburi
 
 config: composer.json 
 
 add  : "psr-4": { 
      
-              "Nandev\\" : "nandev/"
+              "Nandev\\" : "src/"
 
         }
 
