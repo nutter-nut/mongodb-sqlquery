@@ -1,31 +1,23 @@
 <?php
 
-/*
- *
- *  Nandev :
- *  Create by : Anan Paenthongkham
- *  Update : 2020-6-7
- */
-
-/* *******************
- * project Nandave
- * edit file composor.json
- * Create by : Anan Paenthongkam
- *
- * config: composer.json
- *
- * add  : "psr-4": {
- *
- *              "Nandev\\" : "nandev/"
- *
- *        }
- *
- *
- * and run command below in  connamd line :
- *
- * $ composer dumpautoload
- *
- ************************* */
+/* ******************* 
+* project Nandave
+* edit file composor.json 
+* Create by team Nandev: 
+*                       Anan P.
+*                       Suphachai.
+*                       Tanapath.
+*                       
+* config: composer.json 
+* 
+* add  : "psr-4": { 
+*     
+*              "Nandev\\" : "nandev/"
+*
+*        }
+* and run command below in  connamd line :
+* $ composer dumpautoload
+************************* */
 
 namespace Nandev\Advancemongodb;
 
