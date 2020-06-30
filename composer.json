@@ -1,5 +1,5 @@
 {
-    "name": "nantaburi/mongodb-sqlquery",
+    "name": "nutter-nut/mongodb-sqlquery",
     "type": "library",
     "description": "Mongodb using SQL style",
     "keywords": ["laravel",
