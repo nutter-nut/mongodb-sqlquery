@@ -2,12 +2,11 @@
 Mongodb using SQL style
 -Setup
 
-for Laravel :
-    config\databases.php
+
 
 Configuration
 -------------
-add below seetings to interface to use MongoDB to file `config/database.php`:
+add below setings to interface to use MongoDB to file `config/database.php`:
 
 ```php
 'mongodb' => [
